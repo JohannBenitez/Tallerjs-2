@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posición del Ratón</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        #contenedor-posicion {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            width: 150px;
+        }
+        #contenedor-posicion h2 {
+            font-size: 1.2em;
+            margin: 0 0 5px 0;
+            font-weight: bold;
+        }
+        .info-posicion {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor-posicion">
+        <h2>Ratón</h2>
+        <div class="info-posicion">Navegador: <span id="posicion-navegador">[0, 0]</span></div>
+        <div class="info-posicion">Página: <span id="posicion-pagina">[0, 0]</span></div>
+    </div>
+
+    <script src="../js/utilidadespuntero.js"></script>
+</body>
+</html>

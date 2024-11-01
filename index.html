@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <script src="js/utilidadesindex.js"></script>
+</head>
+<body>
+    
+    <script>
+
+
+    Titulo = crearNodoConTexto("h2","Ejercicios")
+
+    px = crearNodo("ul")
+    
+    liUno = crearNodoConTexto("li","")
+    liDos = crearNodoConTexto("li","")
+    liTres = crearNodoConTexto("li","")
+    liCuatro = crearNodoConTexto("li","")
+    liCinco = crearNodoConTexto("li","")
+    liSeis = crearNodoConTexto("li","")
+    liSiete = crearNodoConTexto("li","")
+
+    txt = crearNodoEnlace("ejercicio1","html/ejercicio1.html","_blank")
+    txt2 = crearNodoEnlace("ejercicio2","html/ejercicio2.html","_blank")
+    txt3 = crearNodoEnlace("ejercicio3","html/ejercicio3.html","_blank")
+    txt4 = crearNodoEnlace("ejercicio4","html/ejercicio4.html","_blank")
+    txt5 = crearNodoEnlace("ejercicio5","html/ejercicio5.html","_blank")
+    txt6 = crearNodoEnlace("ejercicio6","html/ejercicio6.html","_blank")
+    txt7 = crearNodoEnlace("ejercicio7","html/ejercicio7.html","_blank")
+
+
+    adicionarNodoAContenedor(txt,liUno)
+    adicionarNodoAContenedor(txt2,liDos)
+    adicionarNodoAContenedor(txt3,liTres)
+    adicionarNodoAContenedor(txt4,liCuatro)
+    adicionarNodoAContenedor(txt5,liCinco)
+    adicionarNodoAContenedor(txt6,liSeis)
+    adicionarNodoAContenedor(txt7,liSiete)
+
+    adicionarNodoAContenedor(liUno,px)
+    adicionarNodoAContenedor(liDos,px)
+    adicionarNodoAContenedor(liTres,px)
+    adicionarNodoAContenedor(liCuatro,px)
+    adicionarNodoAContenedor(liCinco,px)
+    adicionarNodoAContenedor(liSeis,px)
+    adicionarNodoAContenedor(liSiete,px)
+    /*/////////////////////////////////////////*/
+    
+    adicionarNodoABody(Titulo)
+    adicionarNodoABody(px)
+    </script>
+</body>
+
+</html>
